@@ -1,8 +1,7 @@
 # dockerfile-for-yaze
 
 YAZEはCP/Mのエミュレーターです。\
-[YAZE-AG - Yet Another Z80 Emulator by AG (V 2.40.5 / V 2.30.3)](http://www.mathematik.uni-ulm.de/users/ag/yaze/)
-
+<a href='http://www.mathematik.uni-ulm.de/users/ag/yaze/' target="_blank">YAZE-AG - Yet Another Z80 Emulator by AG (V 2.40.5 / V 2.30.3)</a>
 
 プログラミング学習の中でアセンブラ言語と機械語に触れてみたいと思い8bitコンピューターのエミュレーター環境を構築しました。
 dockerfileでまとめたので必要な方はどうぞ
@@ -34,7 +33,8 @@ DESTINATION IS R/O, DELETE (Y/N)? Y
 ```
 ## モニタープログラムの導入
 
-[MON80](http://www.amy.hi-ho.ne.jp/officetetsu/sbc/sbc/devel/man-mon80.html)
+<a href='http://www.amy.hi-ho.ne.jp/officetetsu/sbc/sbc/devel/man-mon80.html' target="_blank">MON80</a>
+
 
 CP/M2.2環境でYAZEを起動
 
