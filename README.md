@@ -14,6 +14,9 @@ CPU: Z80 / OS: CP/M 2.2
 
 ## LOAD, PIPコマンドの導入
 
+CP/M2.2環境では使えないです、\
+設定しましょう。
+
 ```
 docker run -it <ID>
 ```
