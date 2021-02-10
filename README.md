@@ -1,15 +1,15 @@
 # dockerfile-for-yaze
 
 YAZEはCP/Mのエミュレーターです。\
-["YAZE-AG - Yet Another Z80 Emulator by AG (V 2.40.5 / V 2.30.3)"](http://www.mathematik.uni-ulm.de/users/ag/yaze/)
+[YAZE-AG - Yet Another Z80 Emulator by AG (V 2.40.5 / V 2.30.3)](http://www.mathematik.uni-ulm.de/users/ag/yaze/)
 
-プログラミング学習の中でアセンブラ言語に触れてみたいと思い8bitコンピューターのエミュレーター環境を構築しました。
 
+プログラミング学習の中でアセンブラ言語と機械語に触れてみたいと思い8bitコンピューターのエミュレーター環境を構築しました。
 dockerfileでまとめたので必要な方はどうぞ
+
 
 エミュレートする環境は \
 CPU: Z80 / OS: CP/M 2.2
-
 
 
 ## LOAD, PIPコマンドの導入
@@ -35,6 +35,10 @@ DESTINATION IS R/O, DELETE (Y/N)? Y
 
 CP/M2.2環境でYAZEを起動
 
+デフォルトだとCP/M3.1で起動する
+(3.1と2.2の違いが分からなかった
+、、、)
+
 ```
 $ yaze -l -1 -b yaze.boot
 ```
@@ -57,3 +61,21 @@ LAST  ADDRESS 2945
 BYTES READ    2846
 RECORDS WRITTEN 51
 ```
+
+## CP/M2.2でメモリ操作
+
+```
+$ yaze -l -1 -b yaze.boot
+```
+
+```
+A>MON80
+
+MON80 Version 2.1 CP/M Edition
+Intel8080 Monitor Program
+(C)1996-2006 Office TETSU
+
+[8000]
+```
+
+モニタープログラムが起動できました。
